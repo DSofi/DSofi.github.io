@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofi D</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/recursos/bootstrap.css" />
+    <link rel="stylesheet" href="/recursos/fontawesome.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top">
+      <div class="navsofi">
+        <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+          target="_blank">
+          <img
+            src="/images/logo-argprog-light.jpg"
+            alt="Logo Argentina Programa"
+            class="logoArgPrograma"
+          />
+        </a>
+        <button class="btn btn-dark" type="ingresar">Ingresar</button>
+      </div>
+    </nav>
+
+    <header> <!-- banner y foto -->
+      <img
+        class="banner"
+        src="/images/banner-light.jpg"
+        alt="Banner"
+        width="100%"
+      />
+      <img class="foto" src="/images/face.jpg" alt="Foto perfil" />
+    </header>
+
+    <section class="container presentacion">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-7 text-center">
+          <h1 class="h2">Hola! mi nombre es <span class="h1 nombre">Sofi</span></h1>
+          <h4>estoy practicando para ser <br />Desarrolladora FullStack Jr.</h4>
+        </div>
+        <div class="col-md-5">
+          <p class="text-muted border-start border-secondary border-5 acercade">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            repudiandae, consequuntur hic accusamus pariatur ducimus saepe quia,
+            harum sit est maxime, reprehenderit veritatis eaque! Ducimus, velit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="algo"></div>
+    <div id="div_example"></div>
+
+
+
+
+
+    <section class="container experiencia subcat">
+      <h3><i class="fa-sharp fa-solid fa-bookmark fontawesome"></i> Experiencia</h3>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-7">
+          <ul>
+            <li>
+              <h4>Independiente</h4>
+              <p class="fechas">ene 2019 - actualidad</p>
+              <p class="text-muted">Elaboración de planos de relevamiento, municpales, legajos técnicos. <br>
+              Servicios de diseño gráfico, diagramaciones, logotipos. </p>
+            </li>
+            <li>
+              <h4>Everdeck</h4>
+              <p class="fechas">oct 2018 - ene 2021</p>
+              <p class="text-muted">Diseños de modulación, cómputos y presupuestos.</p>
+              <p class="fechas">ene 2021 - jun 2022</p>
+              <p class="text-muted">Administración, Logística, Ventas y Diseño.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img class="img-fluid" src="/images/proyecto01.jpg" alt="Proyecto (nombre01)">
+          <img class="img-fluid" src="/images/proyecto02.jpg" alt="Proyecto (nombre02)">
+        </div>
+      </div>
+    </section>
+
+    <section class="container estudios subcat">
+      <h3><i class="fa-sharp fa-solid fa-bookmark fontawesome"></i> Estudios</h3>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-7">
+            <ul>
+                <li>
+                    <p class="fechas">mar 2015 - actualidad</p>
+                    <img class="logos" src="/images/logo-faud-light.jpg" alt="Logo FAUD">
+                    <h4>Estudiante de Arquitectura (FAUD)</h4>
+                    <p class="text-muted descripcion">
+                    Facultad de Arquitectura Urbanismo y Diseño (UNC) - En curso<br>
+                    Promedio actual con aplazos: 8.89 <br>
+                    Promedio actual sin aplazos: 9.08</p>
+                </li>
+
+                <li>
+                    <p class="fechas">mar 2022 - actualidad</p>
+                    <img class="logos" src="/images/logo-argprograma-mini-light.jpg" alt="Logo Argentina Programa">
+                    <h4>Argentina Programa</h4>
+                    <p class="text-muted descripcion">
+                    Módulo 1 #SeProgramar - Aprobado <br>
+                    Módulo 2 #YoProgramo - En curso</p>
+                </li>
+
+                <li>
+                    <p class="fechas">jun 2022 - actualidad</p>
+                    <img class="logos" src="/images/logo-instrumenta.light.jpg" alt="Logo Instrumenta">
+                    <h4>Diplomatura en Diseño UX / UI (Instrumenta - UTN)</h4>
+                    <p class="text-muted descripcion">En curso</p>
+                </li>
+
+                <li>
+                    <p class="fechas">oct 2019 - oct 2020</p>
+                    <img class="logos" src="/images/logo-unc-light.jpg" alt="Logo Universidad Nacional de Córdoba">
+                    <h4>Diplomatura en Tecnologías Digitales para la Arquitectura</h4>
+                    <p class="text-muted descripcion">(FAUD - UNC) Certificados oficiales de Autodesk de: <br>
+                    Revit Architecture | Revit Structure | 3Ds max | Naviswork Manage</p>
+                </li>
+
+                <li>
+                    <p class="fechas">mar 2009 - dic 2014</p>
+                    <img class="logos" src="/images/logo-enet-light.jpg" alt="Logo Escuela N°4-117 Ejército de los Andes">
+                    <h4>Maestro Mayor de Obras</h4>
+                    <p class="text-muted descripcion">Escuela de Educación Técnica N°4-117 "Ejército de los Andes"</p>
+                </li>
+
+                <li id="ver-idiomas">
+                    <p style="cursor: pointer" onclick="verIdiomas()">ver más (idiomas) ...</p>
+                </li>
+            </ul>
+        
+            <ul id="idiomas-ocult">
+                <li>
+                    <p class="fechas">mar 2007 - dic 2010</p>
+                    <img class="logos" src="/images/logo-thehouse-light.jpg" alt="Logo The House Institute">
+                    <h4>Inglés Nivel B2</h4>
+                    <p class="text-muted descripcion">The House Institute</p>
+                </li>
+
+                <li>
+                    <p class="fechas">ago 2021 - jun 2022</p>
+                    <img class="logos" src="/images/logo-lenguas-light.jpg" alt="Logo Facultad de Lenguas UNC">
+                    <h4>Italiano Nivel B2 (DIFA)</h4>
+                    <p class="text-muted descripcion">Departamento de Idiomas con Fines Académicos (Facultad de Lenguas - UNC) <br>
+                    Nivel B1 - Aprobado: Nota final 10 <br>
+                    Nivel B2 - Aprobado: Nota final 10</p>
+                </li>
+
+                <li>
+                    <p class="fechas">ene 2022 - actualidad</p>
+                    <img class="logos" src="/images/logo-internet-light.jpg" alt="Logo Internet">
+                    <h4>Árabe básico</h4>
+                    <p class="text-muted descripcion">Aprendiendo de manera autodidacta</p>
+                </li>
+
+                <li id="ver-workshops">
+                    <p style="cursor: pointer" onclick="verWorkshops()">ver otros (workshops) ...</p>
+                </li>
+            </ul>
+
+            <ul id="workshops-ocult">
+                <li>
+                    <p class="fechas">abr 2019</p>
+                    <h4>workshop - Modernidad remixada</h4>
+                    <p class="text-muted descripcion">Arquitecturas para utopías urgentes. Bloque residencia universitaria de estudiantes Cerro San Javier, Tucumán.</p>
+                </li>
+
+                <li>
+                    <p class="fechas">may 2019</p>
+                    <h4>workshop - SOS Ciudades San Juan </h4>
+                    <p class="text-muted descripcion">Proyecto "Matriz 40/20 E/O - Reorientar la ciudad"</p>
+                </li>
+
+                <li>
+                    <p class="fechas">may 2019</p>
+                    <h4>workshop - Ley de seguridad eléctrica (FAUD - UNC)</h4></p>
+                </li>
+
+                <li id="ocultar-estudios">
+                    <p style="cursor: pointer" onclick="ocultarEstudios()">ocultar</p>
+                </li>
+            </ul>
+          
+        </div>
+        <div class="col-lg-5 text-center">
+            <img class="img-fluid" src="/images/proyecto05.jpg" alt="Proyecto (nombre05)">
+            <img class="img-fluid" src="/images/proyecto03.jpg" alt="Proyecto (nombre03)">
+            <img class="img-fluid" src="/images/proyecto04.jpg" alt="Proyecto (nombre04)">
+        </div>
+      </div>
+    </section>
+
+    <section class="skills subcat">
+        <h3><i class="fa-sharp fa-solid fa-bookmark fontawesome"></i> Skills</h3>
+
+        <div class="skills">
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: khaki; --num: 90">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>90<span>%</span></h2>
+                  <p>AutoCAD</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: khaki; --num: 90">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>90<span>%</span></h2>
+                  <p>Sketchup</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: khaki; --num: 40">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>40<span>%</span></h2>
+                  <p>3ds max</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: khaki; --num: 60">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>60<span>%</span></h2>
+                  <p>VRay</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: khaki; --num: 60">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>60<span>%</span></h2>
+                  <p>Revit</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: #fcbcb8; --num: 90">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>90<span>%</span></h2>
+                  <p>Photoshop</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: #fcbcb8; --num: 70">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>70<span>%</span></h2>
+                  <p>Illustrator</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: #fcbcb8; --num: 40">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>40<span>%</span></h2>
+                  <p>SAI</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: #fcbcb8; --num: 40">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>40<span>%</span></h2>
+                  <p>Figma</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: #fcbcb8; --num: 40">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>40<span>%</span></h2>
+                  <p>Whimsical</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(191, 236, 132); --num: 90">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>90<span>%</span></h2>
+                  <p>Excel</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(118, 191, 204); --num: 20">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>20<span>%</span></h2>
+                  <p>VSCode</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(118, 191, 204); --num: 60">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>60<span>%</span></h2>
+                  <p>HTML5</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(118, 191, 204); --num: 30">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>30<span>%</span></h2>
+                  <p>CSS3</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(118, 191, 204); --num: 2">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>2<span>%</span></h2>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(118, 191, 204); --num: 1">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>1<span>%</span></h2>
+                  <p>TypeScript</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(118, 191, 204); --num: 5">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>5<span>%</span></h2>
+                  <p>Git</p>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <div class="porcentaje" style="--clr: rgb(118, 191, 204); --num: 5">
+                <div class="puntito"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="numero">
+                  <h2>5<span>%</span></h2>
+                  <p>Github</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="idioms subcat">
+        <h3><i class="fa-sharp fa-solid fa-bookmark fontawesome"></i> Idiomas</h3>
+        <div class="cont-idiomas">
+            <div class="idiomas">
+                <h5>Español</h5>
+                <div class="barra">
+                    <div class="progreso" style="--w: 98%"></div>
+                </div>
+                <h6>Nativo</h6>
+            </div>
+            <div class="idiomas">
+                <h5>Inglés</h5>
+                <div class="barra">
+                    <div class="progreso" style="--w: 80%"></div>
+                </div>
+                <h6>Nivel B2</h6>
+            </div>
+            <div class="idiomas">
+                <h5>Italiano</h5>
+                <div class="barra">
+                    <div class="progreso" style="--w: 86%"></div>
+                </div>
+                <h6>Nivel B2</h6>
+            </div>
+            <div class="idiomas">
+                <h5>Árabe</h5>
+                <div class="barra">
+                    <div class="progreso" style="--w: 20%"></div>
+                </div>
+                <h6>Básico - aprendiendo actualmente</h6>
+            </div>
+            <div class="idiomas">
+                <h5>Chino</h5>
+                <div class="barra">
+                    <div class="progreso" style="--w: 5%"></div>
+                </div>
+                <h6>Básico - aprendiendo actualmente</h6>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- JavaScript -->
+    <script src="/recursos/bootstrap.js"></script>
+    <script src="/recursos/fontawesome.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

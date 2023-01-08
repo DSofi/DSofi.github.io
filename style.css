@@ -1,0 +1,337 @@
+@font-face {
+  font-family: "Muli";
+  src: url(/recursos/mulish.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/recursos/poppins.ttf);
+}
+
+body {
+  margin: 0 4%;
+  font-family: Muli;
+}
+
+.logoArgPrograma {height: 40px;}
+
+.btn {border-radius: 0;}
+
+nav {background-color: white;}
+
+.navsofi {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6%;
+}
+
+.foto {
+  height: 26vh;
+  position: relative;
+  left: 5%;
+  top: -90px;
+  border-radius: 50%;
+  margin-bottom: -80px;
+}
+
+header {margin-top: 40px;}
+
+.presentacion {margin-top: 60px;}
+
+.nombre {
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.border-start {padding: 10px 10px 10px 30px;}
+
+.fontawesome {
+  font-size: 20px;
+  padding-right: 16px;
+}
+
+.subcat {margin-top: 100px;}
+
+li {
+  color: olive;
+  margin-left: 50px;
+}
+
+h4 {
+  color: black;
+  font-size: 1.2em;
+}
+
+.descripcion {
+  margin-top: -15px;
+  font-size: 0.9em;
+}
+
+.logos {
+  width: 40px;
+  margin: 10px 20px 0 -65px;
+}
+
+li > h4 {display: inline-block;}
+
+.fechas {
+  margin-bottom: -5px;
+  font-size: 0.8em;
+}
+
+.img-fluid {margin: 5px 20px;}
+
+#idiomas-ocult, #workshops-ocult {display: none;}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: Poppins;
+}
+
+.skills .habilidad {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.skills .habilidad .porcentaje {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.skills .habilidad .porcentaje svg {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  transform: rotate(270deg);
+  /* background-color: yellow; */
+}
+
+.skills .habilidad .porcentaje svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: rgb(236, 236, 236);
+  transform: translate(10px, 10px);
+}
+
+.skills .habilidad .porcentaje svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 314;
+  /* stroke-dashoffset: calc(314 - (314 * var(--num)) / 100); */
+  animation: animBarrita 2s linear forwards;
+}
+
+@keyframes animBarrita {
+  0% {
+    /* stroke: var(--clr);
+      stroke-dasharray: 314; */
+    stroke-dashoffset: 314;
+  }
+
+  100% {
+    /* stroke: var(--clr);
+    stroke-dasharray: 314; */
+    stroke-dashoffset: calc(314 - (314 * var(--num)) / 100);
+  }
+}
+
+.puntito {
+  position: absolute;
+  /* background-color: red; */
+  inset: 10px;
+  z-index: 6;
+  transform: rotate(calc(3.6deg * var(--num)));
+  animation: animarpuntito 1s linear forwards;
+}
+
+@keyframes animarpuntito {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(calc(3.6deg * var(--num)));}
+}
+
+.puntito::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--clr);
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+}
+
+.numero {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.numero h2 {
+  font-weight: 800;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.numero h2 span {
+  font-weight: 300;
+  font-size: 0.6em;
+}
+.numero p {
+  font-size: 0.65em;
+  letter-spacing: 0.2em;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* FIN SKILLS */
+
+/* BARRAS IDIOMAS */
+h5,h6 {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 50;
+  margin-bottom: 5px;
+}
+
+h6 {
+  font-size: 1em;
+  color: rgb(192, 192, 192);
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.cont-idiomas {
+  max-width: 450px;
+  /* height: 80vh; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.barra {
+  width: 320px;
+  height: 10px;
+  background-color: (0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid rgb(243, 243, 243);
+  box-shadow: 10px 5px 10px rgb(212, 212, 212, 0.25);
+  /* border-right: 3px solid white; */
+  /* border-bottom: 3px solid white; */
+}
+
+.progreso {
+  width: var(--w);
+  height: 100%;
+  background-color: khaki;
+  border-radius: 10px;
+  animation: Aumentar 4s ease;
+}
+
+@keyframes Aumentar {
+  0% {width: 0%;}
+  100% {width: var(--w);}
+}
+
+/* FIN BARRAS IDIOMAS */
+
+/* INICIO MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .foto {
+    height: 18vh;
+    top: -60px;
+    margin-bottom: -80px;
+  }
+
+  header {margin-top: 55px;}
+
+  .presentacion {margin-top: 15px;}
+
+  .acercade {margin-top: 20px;}
+
+  .subcat {
+    margin: 30px 0;
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 576px) {
+  .foto {
+    height: 14vh;
+    top: -40px;
+    margin-bottom: -50px;
+  }
+
+  .img-fluid {margin: 10px 0;}
+
+  .skills .habilidad {
+    width: 130px;
+    height: 130px;
+  }
+
+  .experiencia ul {margin-left: -20px;}
+}
+@media (max-width: 460px) {
+  .logoArgPrograma {height: 25px;}
+
+  .btn {
+    --bs-btn-padding-y: 1px;
+    --bs-btn-padding-x: 1.2rem;
+    --bs-btn-font-size: 0.6rem;
+    height: 20px;
+  }
+
+  header {margin-top: 45px;}
+
+  .foto {
+    height: 10vh;
+    top: -40px;
+    margin-bottom: -40px;
+  }
+
+  .acercade {
+    border-left: none !important;
+    border-top: 1px solid lightgray;
+    padding: 10px 0;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .fontawesome {padding-right: 6px;}
+
+  ul {
+    margin-left: -5px;
+    padding: 0;
+  }
+
+  .logos {display: none;}
+
+  h4 {margin: 10px 0px 15px;}
+
+  .img-fluid {margin: 4px 0;}
+}
